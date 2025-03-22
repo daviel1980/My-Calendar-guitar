@@ -1,0 +1,155 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 20px;
+  background-color: #f4f4f4; /* Sfondo chiaro (bianco sporco) */
+  color: #333; /* Testo scuro */
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.controls button {
+  background-color: #e0f7fa; /* Azzurro chiaro */
+  color: #00838f; /* Blu scuro */
+  border: 1px solid #00838f;
+  padding: 10px 20px;
+  margin: 0 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  /* Rimozione degli effetti neon per uno sfondo chiaro */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.controls button:hover {
+  background-color: #00838f;
+  color: #e0f7fa;
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2);
+}
+
+#currentMonthYear {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+}
+
+#calendar {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff; /* Sfondo bianco per il calendario */
+}
+
+#calendar th, #calendar td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+#calendar th {
+  background-color: #f0f0f0;
+  color: #333;
+  font-weight: bold;
+}
+
+#calendar td {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#calendar td:hover {
+  background-color: #e0e0e0;
+}
+
+#calendar td.has-practice {
+  background-color: #a7ffeb; /* Verde chiaro per la pratica */
+  color: #333;
+  font-weight: bold;
+}
+
+#practiceForm {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+#practiceForm h3 {
+  margin-top: 0;
+  color: #00838f;
+}
+
+#practiceForm p {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#practiceForm label {
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+}
+
+#practiceForm input[type="radio"] {
+  margin-right: 5px;
+}
+
+#practiceForm label[for] {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+#practiceForm button {
+  background-color: #e0f7fa;
+  color: #00838f;
+  border: 1px solid #00838f;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  /* Rimozione degli effetti neon */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 15px;
+}
+
+#practiceForm button:hover {
+  background-color: #00838f;
+  color: #e0f7fa;
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2);
+}
+
+.stats {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #333;
+}
+
+.stats h3 {
+  color: #00838f;
+  margin-top: 0;
+}
+
+.stats p {
+  margin-bottom: 8px;
+}
+
+.stats span {
+  font-weight: bold;
+  color: #00838f;
+}

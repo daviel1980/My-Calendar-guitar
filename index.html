@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracciamento Pratica Chitarra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Tracciamento Pratica Chitarra</h1>
+
+    <div class="controls">
+        <button id="prevMonth">Mese Precedente</button>
+        <h2 id="currentMonthYear"></h2>
+        <button id="nextMonth">Mese Successivo</button>
+    </div>
+
+    <table id="calendar">
+        <thead>
+            <tr>
+                <th>Lun</th>
+                <th>Mar</th>
+                <th>Mer</th>
+                <th>Gio</th>
+                <th>Ven</th>
+                <th>Sab</th>
+                <th>Dom</th>
+            </tr>
+        </thead>
+        <tbody>
+            </tbody>
+    </table>
+
+    <div id="practiceForm">
+        <h3>Registra Pratica per il Giorno Selezionato</h3>
+        <p id="selectedDay"></p>
+        <label>Tipo di pratica:</label><br>
+        <input type="radio" id="stop" name="practice_type" value="stop">
+        <label for="stop">Stop</label><br>
+
+        <input type="radio" id="5min" name="practice_type" value="5min">
+        <label for="5min">5 min</label><br>
+
+        <input type="radio" id="15min" name="practice_type" value="15min">
+        <label for="15min">15 min</label><br>
+
+        <input type="radio" id="30min" name="practice_type" value="30min">
+        <label for="30min">30 min</label><br>
+
+        <input type="radio" id="more_30min" name="practice_type" value="more_30min">
+        <label for="more_30min">> 30 min</label><br><br>
+
+        <button id="savePractice">Salva Pratica</button>
+    </div>
+
+    <div class="stats">
+        <h3>Statistiche</h3>
+        <p>Totale Minuti: <span id="totalMinutes">0</span></p>
+        <p>Totale Stop: <span id="totalStop">0</span></p>
+        <p>Massimo di Giorni Senza Stop: <span id="maxStreak">0</span></p>
+        <button id="resetStats">Azzera Statistiche</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
